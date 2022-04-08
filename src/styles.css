@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  /* min-height: 100vh; */
+  overflow: hidden;
+  position: relative;
+  background: url(./background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.star {
+  /* position: absolute; */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: none;
+  /* animation: star 5s linear 0.3s infinite alternate none; */
+}
+
+.star img {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: star 10s linear 0s infinite alternate;
+}
+
+.star img:nth-child(2) {
+  top: 0;
+  left: 15%;
+  animation: star 8s linear 0.1s infinite;
+}
+
+.star img:nth-child(3) {
+  top: 0;
+  left: 35%;
+  animation: star 7s linear 0.3s infinite alternate;
+}
+
+.star img:nth-child(4) {
+  top: 0;
+  left: 55%;
+  animation: star 7s linear 0.1s infinite alternate;
+}
+
+.star img:nth-child(5) {
+  top: 0;
+  left: 35%;
+  animation: star 10s linear 0.2s infinite;
+}
+.star img:nth-child(6) {
+  top: 0;
+  left: 75%;
+  animation: star 6s linear 0.4s infinite;
+}
+
+.star img:nth-child(7) {
+  top: 20%;
+  left: 0%;
+  animation: star 11s linear 0s infinite alternate;
+}
+
+.star img:nth-child(8) {
+  top: 20%;
+  left: 25%;
+  animation: star 8s linear 0.3s infinite alternate;
+}
+
+.star img:nth-child(9) {
+  top: 20%;
+  left: 75%;
+  animation: star 7s linear 0s infinite;
+}
+.star img:nth-child(10) {
+  top: 50%;
+  left: 0%;
+  animation: star 9s linear 0.4s infinite;
+}
+.star img:nth-child(11) {
+  top: 50%;
+  left: 25%;
+  animation: star 12s linear 0.2s infinite alternate;
+}
+
+.star img:nth-child(12) {
+  top: 50%;
+  left: 55%;
+  animation: star 11s linear 0.2s infinite;
+}
+.star img:nth-child(13) {
+  top: 50%;
+  left: 75%;
+  animation: star 7s linear 0.3s infinite alternate;
+}
+
+.moon {
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  left: -50% !important;
+}
+
+.moon img {
+  width: 600px;
+}
+
+/* .hero-image {
+  position: absolute;
+  top: 0;
+  left: 0; */
+/* width: 300px;
+  height: 300px; */
+/* } */
+
+/* .hero-image > #moon {
+  filter: brightness(0.7);
+  animation: App-logo-spin infinite 20s linear;
+  /* width: 100px; */
+/* height: 800px; */
+/* transform-origin: center center;
+  transform-box: content-box; */
+/* } */
+/* 
+@keyframes App-logo-spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+} */
+
+/* body {
+  background: url(./assets/coming-soon-page-D01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: #ffffff;
+} */
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  left: 0;
+}
+
+.header-center {
+  width: 90vw;
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+nav {
+  height: 120px;
+  display: grid;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+}
+
+.hero-content {
+  position: absolute;
+  /* top: 300%; */
+  top: 40%;
+}
+
+.hero-content h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.hero-content h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 72px;
+  letter-spacing: 2px;
+}
+
+.contacts {
+  position: absolute;
+  /* bottom: 8%; */
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* gap: 6rem; */
+  gap: 1rem;
+  bottom: 8%;
+}
+
+.contact h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.contact p {
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.social-icons {
+  position: absolute;
+  right: 4%;
+  bottom: 8%;
+  z-index: 9999;
+}
+
+.social-icons > a {
+  text-decoration: none;
+}
+
+.social-icons a > img {
+  width: 30px;
+  margin-left: 0.5rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    min-height: 100vh;
+  }
+  .contacts {
+    bottom: 8%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+  }
+
+  .star-mobile {
+    display: none !important;
+  }
+
+  .star {
+    display: block;
+  }
+
+  .moon {
+    left: 0px !important;
+  }
+
+  .moon img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-icons {
+    top: 5%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .social-icons {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body {
+    background-position: -8rem -0rem;
+  }
+
+  .hero-content {
+    top: 35%;
+  }
+  .hero-content h1 {
+    line-height: 1.2;
+    font-size: 52px;
+  }
+}
+
+/* @keyframes star {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+@keyframes star {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.2;
+  }
+
+  20% {
+    opacity: 0.4;
+  }
+
+  30% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* @keyframes star {
+  0.0% {
+    opacity: 0;
+  }
+  10.0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+  19.6% {
+    opacity: 0.4;
+  }
+  29.9% {
+    opacity: 0.6;
+  }
+  40.0% {
+    opacity: 0.8;
+  }
+  49.6% {
+    opacity: 1;
+  }
+  59.9% {
+    opacity: 0.8;
+  }
+  70.0% {
+    opacity: 0.6;
+  }
+  79.8% {
+    opacity: 0.4;
+  }
+  90.4% {
+    opacity: 0.2;
+  }
+} */
