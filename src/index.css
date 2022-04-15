@@ -10,7 +10,7 @@
 
 body {
   position: relative;
-  background: url(./assets/background.svg);
+  background: url(./assets/moon\ abstract\ copy.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -54,7 +54,6 @@ footer{
   align-items: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: black;
 
 }
 

@@ -10,10 +10,7 @@ const Footer = () => {
         <div className="footer-center">
        <div className="footer-one">
        <a href="/"> <img src={Logo} alt="logo" /> </a>
-       <h3>The Line Animation Studio Ltd
-Studio 02, De Beauvoir Block
-92-96 De Beauvoir Road
-London N1 4EN
+       <h3>B-103, Behind Triveni Commercial Complex Panchsheel Vihar,New Delhi, Delhi 110017
 </h3>
            </div> 
            <div className="footer-two">
@@ -27,7 +24,7 @@ London N1 4EN
           </div>
           <div class="contact">
             <h5>CONTACT</h5>
-            <p>+91 9311986662</p>
+            <p>+91 8595583144</p>
           </div>
            </div>
            <div className="footer-three">

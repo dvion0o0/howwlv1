@@ -60,7 +60,7 @@ const Header = () => {
           {/* <h3>OUR NEW WEBSITE IS</h3> */}
           <h1>HOWWL DESIGN</h1>
         </div>
-        <div className="social-icons">
+        {/* <div className="social-icons">
           <a href="https://www.linkedin.com/company/howwl" target="_blank">
             <img src={LinkedIn} alt="linkedin" />
           </a>
@@ -70,7 +70,7 @@ const Header = () => {
           <a href="https://www.behance.net/howwldesign" target="_blank">
             <img src={Behance} alt="behance" />
           </a>
-        </div>
+        </div> */}
     </div>
     </div>
   {/* <Link className='Scrollme' to="about" spy={true} smooth={true}><HiChevronDown /></Link> */}

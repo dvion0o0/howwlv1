@@ -4,6 +4,8 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import Pic1 from "../../assets/Chamkaur_Chap11_Scene11-15_Draft01.jpg"
 import Pic2 from "../../assets/Chamkaur_Chap11_Scribbles_Scene_ALL_Draft_03.jpg"
 import Pic3 from "../../assets/Shot 15_a.jpg"
+import {BiRightArrow} from "react-icons/bi"
+
 
 const Work = () => {
 
@@ -33,7 +35,9 @@ const Work = () => {
                             alt=""
                         />
                     ))}
-                    <div>More Projects</div>
+                    <div className='more-projects'>More Projects
+                    <BiRightArrow  className='icon-arrow'/>
+                    </div>
                 </Masonry>
             </ResponsiveMasonry>
             {/* <div className="work-grid">
